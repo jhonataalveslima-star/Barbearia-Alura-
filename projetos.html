@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projetos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="projetos.css">
+</head>
+<body>
+
+<div class="page">
+
+  <nav>
+    <a class="logo" href="https://github.com/" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.27 7.77 10.77.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.51-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.05-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.15 1.16.91-.25 1.89-.38 2.86-.38.97 0 1.95.13 2.86.38 2.18-1.47 3.14-1.16 3.14-1.16.63 1.57.23 2.73.12 3.02.73.8 1.17 1.81 1.17 3.05 0 4.35-2.65 5.31-5.18 5.59.41.35.77 1.04.77 2.1 0 1.52-.01 2.74-.01 3.11 0 .3.2.66.79.55A11.03 11.03 0 0023.02 11.5C23.02 5.24 18.27.5 12 .5z"/>
+      </svg>
+      GitHub
+    </a>
+
+    <div class="nav-right">
+      <a class="nav-btn ghost" href="hero.html#sobre">Sobre mim</a>
+      <a class="nav-btn ghost" href="contato.html">Contato</a>
+      <a class="nav-btn solid" href="hero.html">Início</a>
+    </div>
+  </nav>
+
+  <header class="page-head">
+    <div class="eyebrow">Projetos em destaque</div>
+    <h1>Sistemas que resolvem <span class="accent">problemas reais</span>, do back-end à interface.</h1>
+    <p class="page-desc">
+      Uma seleção de aplicações que desenvolvi com foco em APIs robustas,
+      integração de sistemas e experiência de uso — de sistemas de pontos
+      e cashback a ferramentas de reciclagem.
+    </p>
+  </header>
+
+  <div class="filters">
+    <button class="filter-btn active" data-filter="todos">Todos</button>
+    <button class="filter-btn" data-filter="backend">Back-End</button>
+    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+    <button class="filter-btn" data-filter="frontend">Front-End</button>
+  </div>
+
+  <div class="grid" id="grid">
+
+    <!-- RecyPay -->
+    <div class="card" data-cat="fullstack">
+      <div class="card-top">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7" rx="1"></rect>
+            <rect x="14" y="3" width="7" height="7" rx="1"></rect>
+            <rect x="3" y="14" width="7" height="7" rx="1"></rect>
+            <path d="M14 14h3v3h3v3h-3v-3h-3z"></path>
+          </svg>
+        </div>
+        <span class="status-pill progress">em desenvolvimento</span>
+      </div>
+      <h3>RecyPay</h3>
+      <p>
+        Sistema de gestão de pontos e geração de QR Code para funcionários.
+        Backend em Node.js/Express integrado a um gerador de QR em Python,
+        com crédito de pontos, validação de dados e registro de transações.
+      </p>
+      <div class="tags">
+        <span class="tag">Node.js</span>
+        <span class="tag">Express</span>
+        <span class="tag">Python</span>
+        <span class="tag">QR Code</span>
+      </div>
+      <a class="card-link" href="#">
+        Ver detalhes
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+
+    <!-- FastAPI QR backend -->
+    <div class="card" data-cat="backend">
+      <div class="card-top">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l8 4.5v9L12 20l-8-4.5v-9L12 2z"></path>
+            <path d="M12 8v8"></path>
+            <path d="M8.5 6l7 4"></path>
+            <path d="M15.5 6l-7 4"></path>
+          </svg>
+        </div>
+        <span class="status-pill done">concluído</span>
+      </div>
+      <h3>API de resgate de QR Codes</h3>
+      <p>
+        Backend em FastAPI para geração e resgate de QR Codes com autenticação
+        JWT, ORM com SQLAlchemy, notificações em tempo real via WebSocket e
+        controle de concorrência com locks de banco de dados.
+      </p>
+      <div class="tags">
+        <span class="tag">FastAPI</span>
+        <span class="tag">SQLAlchemy</span>
+        <span class="tag">JWT</span>
+        <span class="tag">WebSocket</span>
+      </div>
+      <a class="card-link" href="#">
+        Ver detalhes
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Ponto Verde -->
+    <div class="card" data-cat="frontend">
+      <div class="card-top">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a10 10 0 100 20 10 10 0 000-20z"></path>
+            <path d="M12 7v5l3 3"></path>
+          </svg>
+        </div>
+        <span class="status-pill live">em uso</span>
+      </div>
+      <h3>Ponto Verde Reciclagem</h3>
+      <p>
+        Interface de pontos e cashback para reciclagem com balança digital
+        integrada. Tabela oficial de conversão de pontos para valor, tema
+        claro/escuro animado e identidade visual verde.
+      </p>
+      <div class="tags">
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">UI/UX</span>
+      </div>
+      <a class="card-link" href="#">
+        Ver detalhes
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Calculadora de reciclagem -->
+    <div class="card" data-cat="fullstack">
+      <div class="card-top">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+            <line x1="8" y1="7" x2="16" y2="7"></line>
+            <line x1="8" y1="11" x2="10" y2="11"></line>
+            <line x1="13" y1="11" x2="15" y2="11"></line>
+            <line x1="8" y1="15" x2="10" y2="15"></line>
+            <line x1="13" y1="15" x2="15" y2="15"></line>
+          </svg>
+        </div>
+        <span class="status-pill done">concluído</span>
+      </div>
+      <h3>Calculadora de Reciclagem</h3>
+      <p>
+        Aplicação single-page com login, tabela dinâmica de 16 tipos de
+        materiais, histórico com filtros, dashboard com gráficos e
+        exportação em PDF e Excel.
+      </p>
+      <div class="tags">
+        <span class="tag">JavaScript</span>
+        <span class="tag">Chart.js</span>
+        <span class="tag">jsPDF</span>
+        <span class="tag">SheetJS</span>
+      </div>
+      <a class="card-link" href="#">
+        Ver detalhes
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Portfólio -->
+    <div class="card" data-cat="frontend">
+      <div class="card-top">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="15" rx="2"></rect>
+            <line x1="8" y1="22" x2="16" y2="22"></line>
+            <line x1="12" y1="19" x2="12" y2="22"></line>
+          </svg>
+        </div>
+        <span class="status-pill progress">em desenvolvimento</span>
+      </div>
+      <h3>Portfólio Pessoal</h3>
+      <p>
+        Site de portfólio com página inicial ilustrada e seção de projetos
+        em destaque, com identidade visual roxa e escura, grid de cards
+        filtráveis e tipografia autoral.
+      </p>
+      <div class="tags">
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Design</span>
+      </div>
+      <a class="card-link" href="#">
+        Ver detalhes
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Diagnóstico Hardware (bonus / backend-adjacent tooling) -->
+    <div class="card" data-cat="backend">
+      <div class="card-top">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+            <path d="M9 2v2"></path><path d="M15 2v2"></path>
+            <path d="M9 20v2"></path><path d="M15 20v2"></path>
+            <path d="M2 9h2"></path><path d="M2 15h2"></path>
+            <path d="M20 9h2"></path><path d="M20 15h2"></path>
+          </svg>
+        </div>
+        <span class="status-pill done">concluído</span>
+      </div>
+      <h3>Transferência de Pontos</h3>
+      <p>
+        App de transferência de pontos entre usuários com armazenamento
+        local, estética de caderneta bancária e fluxo simplificado de
+        três campos, sem login ou cadastro.
+      </p>
+      <div class="tags">
+        <span class="tag">JavaScript</span>
+        <span class="tag">localStorage</span>
+        <span class="tag">UI/UX</span>
+      </div>
+      <a class="card-link" href="#">
+        Ver detalhes
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<script src="projetos.js"></script>
+
+</body>
+</html>
